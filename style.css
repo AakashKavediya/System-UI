@@ -15,8 +15,8 @@ body {
 aside label i {
     margin-left: 20px;
     font-size: 0px;
-    margin-top: 20px;
-    padding: 5px;
+    /* margin-top: 20px; */
+    /* padding: 5px; */
     display: none;
 }
 
@@ -25,17 +25,31 @@ aside label i {
     height: 100vh;
     display: block;
     flex-wrap: nowrap;
+    background-color: #fff;
+}
+
+aside label {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 aside h2 {
     font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    margin-left: 19px;
+    /* padding: 10px; */
+    margin-left: 5px;
     font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
 }
 
 aside label {
     margin-right: 8px;
+    background-color: #fff;
 }
 
 aside ul li {
@@ -72,13 +86,18 @@ aside #bottom li {
     bottom: 0;
 }
 
+aside {
+    /* background-color: #fff; */
+}
+
 @media screen {
     #chk:checked~.sidebar {
         transition: .5s;
-        width: 320px;
+        width: 250px;
         position: fixed;
         overflow-y: scroll;
-        margin-left: 5px;
+        margin-left: 0px;
+        background-color: #fff;
     }
 }
 
@@ -106,6 +125,7 @@ aside ul li a:hover {
     aside {
         height: 100vh;
         overflow-y: hidden;
+        position: fixed;
     }
     .sidebar {
         width: 52px;
@@ -113,16 +133,16 @@ aside ul li a:hover {
         overflow-x: hidden;
         /* display: flex; */
         flex-wrap: nowrap;
-        height: 90vh;
+        height: 100vh;
         overflow-y: hidden;
+        position: fixed;
+        margin-top: 40px;
+        transition: .5s;
     }
     aside label i {
         display: block;
         font-size: 30px;
         /* margin-left: 70px; */
-    }
-    aside label {
-        margin-top: 50px;
     }
     aside ul li:hover {
         border-left: 0px solid rgba(112, 112, 255, 0.356);
