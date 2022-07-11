@@ -1,0 +1,131 @@
+* {
+    padding: 0cm;
+    margin: 0cm;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+ ::-webkit-scrollbar {
+    width: 0px;
+}
+
+aside label i {
+    margin-left: 20px;
+    font-size: 0px;
+    margin-top: 20px;
+    padding: 5px;
+    display: none;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    display: block;
+    flex-wrap: nowrap;
+}
+
+aside h2 {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin-left: 19px;
+    font-style: italic;
+}
+
+aside label {
+    margin-right: 8px;
+}
+
+aside ul li {
+    list-style: none;
+    padding: 8px;
+    transition: .5s;
+    width: 100%;
+    width: 200px;
+}
+
+aside ul {
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+aside ul li a {
+    color: #535353;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+aside ul li a span {
+    margin-left: 5px;
+}
+
+aside ul li a i {
+    width: 25px;
+    text-align: left;
+}
+
+aside #bottom li {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+}
+
+@media screen {
+    #chk:checked~.sidebar {
+        transition: .5s;
+        width: 320px;
+        position: fixed;
+        overflow-y: scroll;
+    }
+}
+
+
+/* -----HOVER---------------------------------- */
+
+aside ul li:hover {
+    border-left: 5px solid gray;
+    background-color: rgba(128, 128, 128, 0.126);
+    color: #535353;
+}
+
+aside ul li a:hover {
+    color: #535353;
+}
+
+
+/* ----MEDIA------------------------------------------------ */
+
+@media(max-width:600px) {
+    .sidebar h2 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    aside {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .sidebar {
+        width: 50px;
+        /* margin-left: -70px; */
+        overflow-x: hidden;
+        /* display: flex; */
+        flex-wrap: nowrap;
+        height: 90vh;
+        overflow-y: hidden;
+    }
+    aside label i {
+        display: block;
+        font-size: 20px;
+        /* margin-left: 70px; */
+    }
+    aside ul li:hover {
+        border-left: 0px solid rgba(112, 112, 255, 0.356);
+        background-color: transparent;
+        color: #535353;
+    }
+    aside ul li a:hover {
+        color: #535353;
+    }
+}
