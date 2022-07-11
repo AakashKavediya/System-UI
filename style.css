@@ -78,6 +78,7 @@ aside #bottom li {
         width: 320px;
         position: fixed;
         overflow-y: scroll;
+        margin-left: 5px;
     }
 }
 
@@ -107,8 +108,8 @@ aside ul li a:hover {
         overflow-y: hidden;
     }
     .sidebar {
-        width: 50px;
-        /* margin-left: -70px; */
+        width: 52px;
+        margin-left: -70px;
         overflow-x: hidden;
         /* display: flex; */
         flex-wrap: nowrap;
@@ -117,8 +118,11 @@ aside ul li a:hover {
     }
     aside label i {
         display: block;
-        font-size: 20px;
+        font-size: 30px;
         /* margin-left: 70px; */
+    }
+    aside label {
+        margin-top: 50px;
     }
     aside ul li:hover {
         border-left: 0px solid rgba(112, 112, 255, 0.356);
@@ -127,5 +131,8 @@ aside ul li a:hover {
     }
     aside ul li a:hover {
         color: #535353;
+    }
+    aside {
+        padding-top: 30px;
     }
 }
