@@ -21,7 +21,7 @@ aside label i {
 }
 
 .sidebar {
-    width: 200px;
+    width: 230px;
     height: 100vh;
     display: block;
     flex-wrap: nowrap;
@@ -32,8 +32,8 @@ aside label {
     display: flex;
     height: 70px;
     align-items: center;
-    position: fixed;
-    width: 100%;
+    /* position: fixed; */
+    width: 230px;
 }
 
 aside h2 {
@@ -87,13 +87,14 @@ aside #bottom li {
 }
 
 aside {
-    /* background-color: #fff; */
+    position: fixed;
+    background-color: #fff;
 }
 
 @media screen {
     #chk:checked~.sidebar {
         transition: .5s;
-        width: 250px;
+        width: 230px;
         position: fixed;
         overflow-y: scroll;
         margin-left: 0px;
@@ -128,8 +129,7 @@ aside ul li a:hover {
         position: fixed;
     }
     .sidebar {
-        width: 52px;
-        margin-left: -70px;
+        margin-left: -700px;
         overflow-x: hidden;
         /* display: flex; */
         flex-wrap: nowrap;
@@ -154,5 +154,9 @@ aside ul li a:hover {
     }
     aside {
         padding-top: 30px;
+    }
+    aside label {
+        position: fixed;
+        width: 100%;
     }
 }
