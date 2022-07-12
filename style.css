@@ -89,17 +89,89 @@ aside #bottom li {
 aside {
     position: fixed;
     background-color: #fff;
+    padding-top: 30px;
 }
 
-@media screen {
-    #chk:checked~.sidebar {
-        transition: .5s;
-        width: 230px;
-        position: fixed;
-        overflow-y: scroll;
-        margin-left: 0px;
-        background-color: #fff;
-    }
+
+/* -------MAIN-------------------------------------- */
+
+main {
+    padding: 20px;
+    padding-left: 250px;
+}
+
+main .box {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    shape-margin: 10px;
+    /* opacity: 8px; */
+    offset: 30px;
+    height: 200px;
+    overflow-x: scroll;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    /* border: 1px solid #515151; */
+    box-shadow: 5px solid#535353;
+    fill-opacity: inherit;
+}
+
+#flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: row;
+    /* margin-left: 250px; */
+}
+
+main .box .left {
+    width: 70%;
+    padding-left: 18px;
+}
+
+main.box .right {
+    width: 29%;
+}
+
+main .box img {
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 255, 0.73);
+}
+
+main .box .left h6 {
+    font-weight: 900;
+    font-size: 14px;
+}
+
+main .box .left h4 {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+main .box .left p {
+    font-weight: 600;
+    font-size: 10px;
+    color: #545454;
+}
+
+main .box .right input {
+    transform: rotate(270deg);
+    position: sticky;
+    color: red;
+}
+
+main .box .right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -158,5 +230,28 @@ aside ul li a:hover {
     aside label {
         position: fixed;
         width: 100%;
+    }
+    @media screen {
+        #chk:checked~.sidebar {
+            transition: .5s;
+            width: 230px;
+            position: fixed;
+            overflow-y: scroll;
+            margin-left: 0px;
+            background-color: #fff;
+        }
+    }
+    main {
+        padding: 18px;
+        padding-top: 90px;
+        /* padding-left: 0; */
+    }
+    #flow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* margin-left: 250px; */
     }
 }
